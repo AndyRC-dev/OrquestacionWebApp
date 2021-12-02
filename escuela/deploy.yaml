@@ -1,0 +1,21 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: escuela
+  labels: 
+    tipo: "desarrollo"
+spec:
+  selector: 
+    matchLabels:
+      app: escuela
+  replicas: 7 
+  template: 
+    metadata:
+      labels:
+        app: escuela
+    spec:
+      containers:
+      - name: escuela
+        image: michisauria/escuela:latest
+        ports: 
+        - containerPort: 80 

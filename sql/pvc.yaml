@@ -1,0 +1,13 @@
+apiVersion: v1 
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-escuela
+  labels:
+    tipo: "desarrollo"
+spec:
+  storageClassName: escuela-db
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests: 
+      storage: 2Gi

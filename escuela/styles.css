@@ -1,0 +1,232 @@
+:root {
+    --background_primary: rgb(241 241 241);
+    --background_secondary: #0185d0;
+    --font_primary: #4C4C4C;
+    --border_primary: rgb(229 229 229);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(182, 182, 182);
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    border: none;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("./images/ovalo_g.png"), url("./images/oval_striped.png");
+    background-repeat: no-repeat;
+    background-position: -316px -161px, 110% 190%;
+    background-size: contain, 27%;
+}
+
+.container {
+    position: relative;
+    width: 85%;
+    max-height: 90%;
+    padding: 30px;
+    padding-top: 0px;
+    background-color: var(--background_primary);
+    box-shadow: 2px 2px 15px 2px rgb(0 0 0 / 15%);
+    background-image: url("./images/ovalo.png"), url("./images/cervantesx4.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: -80px -100px, 880px center;
+}
+
+.school-name-container {
+    display: flex;
+    background-image: url("./images/escudo_n.png");
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-blend-mode: screen;
+    background-position: 0 center;
+}
+
+.school-name {
+    padding: 50px 105px;
+    font-size: 30px;
+}
+
+.form-container {
+    width: 80%;
+    background-color: white;
+    box-shadow: 2px 2px 15px 2px rgb(0 0 0 / 15%);
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.title-container {
+    display: flex;
+    padding: 20px 65px;
+    background-color: var(--background_primary);
+    background-image: url("./images/estudiante.png");
+    background-position: 20px center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: var(--font_primary);
+}
+
+.form-wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.label-cell {
+    text-align: right;
+}
+
+.label {
+    padding-right: 10px;
+    font-family: sans-serif;
+}
+
+.input-wrapper>input {
+    flex-basis: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border_primary);
+    background-color: var(--background_primary);
+}
+
+.name-input-container {
+    width: 410px;
+    justify-content: space-between;
+}
+
+.name-input-container>input {
+    flex-basis: 40%;
+}
+
+.save-button-container {
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+
+.save-button {
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--background_secondary);
+    color: white;
+    font-weight: bold;
+}
+
+.list-title {
+    background-color: var(--font_primary);
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-left: 60px;
+    background-image: url("./images/portapapeles.png");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 30px;
+}
+
+.list-container {
+    background-color: white;
+    width: fit-content;
+    padding: 20px;
+    box-shadow: 2px 2px 6px 1px #0000003b;
+    overflow-y: scroll;
+    max-height: 330px;
+}
+
+.list-container table {
+    font-family: sans-serif;
+}
+
+.list-container table td {
+    padding: 10px;
+}
+
+.nav-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 190px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.add-button {
+    background-image: url("./images/add.jpg");
+    margin-right: 20px;
+}
+
+.list-button {
+    background-image: url("./images/list.jpg");
+}
+
+.layer-button {
+    padding: 80px 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.icon-cont {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.add-icon {
+    background-image: url("./images/estudiante_b.png");
+}
+
+.list-icon {
+    background-image: url("./images/portapapeles.png");
+}

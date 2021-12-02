@@ -1,0 +1,27 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: escuela-db
+  labels:
+    tipo: "desarrollo"
+spec:
+  selector: 
+    matchLabels:
+      app: escuela-db
+  template: 
+    metadata:
+      labels:
+        app: escuela-db
+    spec:
+      containers:
+      - name: escuela-db
+        image: michisauria/escuela-db:latest
+        ports: 
+        - containerPort: 3306
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: escuela-db
+      volumes:
+       - name: escuela-db
+         persistentVolumeClaim:
+            claimName: pvc-escuela 

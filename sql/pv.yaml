@@ -1,0 +1,14 @@
+apiVersion: v1 
+kind: PersistentVolume
+metadata:
+  name: pv-escuela
+  labels:
+    tipo: "desarrollo"
+spec:
+  storageClassName: escuela-db
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/data"    
